@@ -1,6 +1,6 @@
 # Working with the data — PS-02
 
-Everything in this folder is yours to use. It is fully synthetic: no real people, no personal
+Everything in the `data/` folder is yours to use. It is fully synthetic: no real people, no personal
 data, nothing scraped. It is safe to commit to a public repository.
 
 **49,985 rows across 21 tables**, of which 18 are the tables your

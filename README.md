@@ -16,7 +16,7 @@ The MVP scope on that page is what you are actually building in 24 hours, and it
 
 ### 3 · Understand your data — 45 minutes
 
-`01_YOUR_DATA_MODEL.pdf` lists all 21 tables you have been given — 18 that this statement lives in, plus reference tables — with every field.
+`docs/01_YOUR_DATA_MODEL.pdf` lists all 21 tables you have been given — 18 that this statement lives in, plus reference tables — with every field.
 
 Then do two things rather than just reading:
 
@@ -29,25 +29,25 @@ sqlite3 data/PS-02.db < data/queries/starter_queries.sql
 
 That is 49,985 rows of real, queryable travel data. It is fully synthetic — no real people, no personal data — so it is safe to commit to a public repository.
 
-Before you write code, read `data/WORKING_WITH_THE_DATA.md`. It is short, and it covers the three conventions that cost teams the most time: money is a string and must never touch a float, IDs are opaque and must not be parsed, and language is a BCP-47 tag.
+Before you write code, read `docs/WORKING_WITH_THE_DATA.md`. It is short, and it covers the three conventions that cost teams the most time: money is a string and must never touch a float, IDs are opaque and must not be parsed, and language is a BCP-47 tag.
 
 ### 4 · Design it — this week
 
-`03_DESIGN_SUBMISSION_GUIDE` lists exactly what your design document must contain: scope in and out, user journey, architecture, which tables you will use and what you are adding, your AI approach and how you will know it works, the tech stack, an hour-by-hour plan for the 24 hours, and your fallbacks.
+`docs/03_DESIGN_SUBMISSION_GUIDE` lists exactly what your design document must contain: scope in and out, user journey, architecture, which tables you will use and what you are adding, your AI approach and how you will know it works, the tech stack, an hour-by-hour plan for the 24 hours, and your fallbacks.
 
 ### 5 · Submit the design — by 2 September
 
-Through the hackathon application. Accepted formats, the 25 MB per-file limit and the 10-file limit are all in `03_DESIGN_SUBMISSION_GUIDE`.
+Through the hackathon application. Accepted formats, the 25 MB per-file limit and the 10-file limit are all in `docs/03_DESIGN_SUBMISSION_GUIDE`.
 
 > **You get one upload, and it locks.** There is no replace and no second attempt. Assemble everything, have someone outside the team read it, then upload.
 
 ### 6 · Build — 24 September 12:00 to 25 September 12:00
 
-`04_HACKATHON_DAY_PROCESS` covers the whole thing: what to have ready beforehand, how the day runs, mentors, the 09:00 rule on the second morning, and what you submit at 12:00.
+`docs/04_HACKATHON_DAY_PROCESS` covers the whole thing: what to have ready beforehand, how the day runs, mentors, the 09:00 rule on the second morning, and what you submit at 12:00.
 
 ### 7 · Present — 25 September, after lunch. Finale 26 September
 
-Presentations start post-lunch on the 25th. Results and prizes on the 26th. Also in `04_HACKATHON_DAY_PROCESS`.
+Presentations start post-lunch on the 25th. Results and prizes on the 26th. Also in `docs/04_HACKATHON_DAY_PROCESS`.
 
 ---
 
@@ -55,16 +55,16 @@ Presentations start post-lunch on the 25th. Results and prizes on the 26th. Also
 
 | File | What it is |
 |---|---|
-| `01_YOUR_DATA_MODEL.md` / `.pdf` | Every table and field you have been given, and what each one is for. The PDF previews in SharePoint; the markdown is easier to search. |
+| `docs/01_YOUR_DATA_MODEL.md` / `.pdf` | Every table and field you have been given, and what each one is for. The PDF previews in SharePoint; the markdown is easier to search. |
 | `02_DATA_MODEL_DIAGRAM.html` | Clickable diagram of your tables. Download, then open in a browser. |
-| `03_DESIGN_SUBMISSION_GUIDE.md` / `.pdf` | What to submit on 2 September, in what format, and how. |
-| `04_HACKATHON_DAY_PROCESS.md` / `.pdf` | How 24–26 September run. |
+| `docs/03_DESIGN_SUBMISSION_GUIDE.md` / `.pdf` | What to submit on 2 September, in what format, and how. |
+| `docs/04_HACKATHON_DAY_PROCESS.md` / `.pdf` | How 24–26 September run. |
 | `data/PS-02.db` | SQLite, indexed, only your tables. No setup. |
 | `data/csv/` | The same rows as CSV, numbered in load order. |
 | `data/queries/starter_queries.sql` | Queries that run as-is. Start here. |
 | `data/schema.sql` · `data/schema.sqlite.sql` | DDL for your tables. |
 | `data/enums.json` | The legal values for every enum column. |
-| `data/WORKING_WITH_THE_DATA.md` | Loading instructions and the conventions. |
+| `docs/WORKING_WITH_THE_DATA.md` | Loading instructions and the conventions. |
 | `tools/validate_conformance.py` | Checks your data still conforms. Run it early. |
 | `SHA256SUMS.txt` | `sha256sum -c SHA256SUMS.txt` to confirm your copy is intact. |
 
